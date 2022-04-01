@@ -12,7 +12,7 @@ int main(int argc, char** argv){
     program.add_argument("-p", "--config_path").help("path to main config").required();
     program.add_argument("-t", "--trial_path").help("").required();
     program.add_argument("-b", "--binary_path").help("").required();
-    program.add_argument("--type").help("python|atari|{leave empty}").default_value("");
+    program.add_argument("--type").help("cython_src|atari|{leave empty}").default_value("");
 
     program.parse_args(argc, argv);
 
